@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    max-width: 50rem;
+    max-width: 40rem;
     width: 100%;
 
     display: flex;
@@ -20,6 +20,8 @@ export const Container = styled.div`
     > input {
         background: none;
         border: none;
+        width: 100%;
+        height: 3rem;
     }
     
 `;

@@ -38,10 +38,9 @@ export function SignUp(){
 
     return(
         <Container>
-            <Form>
-                <h1>RocketMovies</h1>
-                <p>Aplicação para acompanhar tudo que assistir.</p>
-
+            <Form className="formLog">
+                <h1>AppMovies</h1>
+                <p>Seu catálogo pessoal de filmes.</p>
                 <h3>Crie Sua Conta</h3>
                 <Input
                     placeholder="Nome"

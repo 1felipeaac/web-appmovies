@@ -39,7 +39,9 @@ export default createGlobalStyle`
         padding: 4.7rem 9rem;
         grid-template-rows: 11.6rem auto;
 
+        border: 2px solid red;
     }
+
     textarea, input{
         font-family: var(--ff-secondary);
         color: ${({ theme }) => theme.COLORS.WHITE};
@@ -59,13 +61,19 @@ export default createGlobalStyle`
 
     @media(max-width:728px) {
 
-        .containers{
-            grid-template-rows: 20rem auto;
-        }
-
+       
         main{
             padding: 2rem 1rem;
             grid-template-rows: 20rem auto;
+        }
+
+        .formLog{
+            padding: 2rem 1rem;
+
+            .containerInput, .containerButton{
+                width: 30rem;
+            }
+
         }
 
         #containerHeader{
