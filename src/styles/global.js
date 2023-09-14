@@ -22,8 +22,6 @@ export default createGlobalStyle`
         font-size: 1.6rem;
 
         -webkit-font-smoothing: antialiased;
-
-        border: 2px solid red;
     }
 
     main::-webkit-scrollbar{

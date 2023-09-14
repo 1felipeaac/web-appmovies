@@ -23,19 +23,15 @@ export const Container = styled.div`
                 align-items: center;
                 justify-content: space-between;
 
-                border: 1px solid yellow;
 
                 h2{
                     max-width: 20rem;
-                    border: 1px solid green;
                 }
 
                 #formSearch{
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-
-                    border: 1px solid blue;
                 }
             }
     
