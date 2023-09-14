@@ -3,47 +3,58 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: grid;
     /* grid-template-rows: 11.6rem auto; */
-    grid-template-columns: .25fr auto;
     grid-template-areas: 
-    "header header"
-    "tags content"
+    "header"
+    "content"
     ;
 
-
+    justify-content: center;
     width: 100%;
     height: 100vh;
     
     > main{
         grid-area: content;
         overflow-y: auto;
+
+        #searchBox{
+
+            #movieSearch{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                border: 1px solid yellow;
+
+                h2{
+                    max-width: 20rem;
+                    border: 1px solid green;
+                }
+
+                #formSearch{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    border: 1px solid blue;
+                }
+            }
+    
+            #tagBox{
+                border-radius: 1rem;
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
         
-
-        #movieData{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            h2{
-                width: 20rem;
+                button{
+                    margin: 1rem;
+                }
             }
 
-            a{
-                width: 30rem;
-            }
         }
+
     }
 
-    >aside{
-        grid-area: tags;
-        border-radius: 1rem;
-
-        max-width: 10rem;
-        width: 100%;
-
-        button{
-            margin: 1rem;
-        }
-    }
 `;
 
 export const InputSearch = styled.input`

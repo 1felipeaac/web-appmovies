@@ -15,13 +15,15 @@ export default createGlobalStyle`
 
     
     body{
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-        color: ${({theme}) => theme.COLORS.WHITE};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+        color: ${({ theme }) => theme.COLORS.WHITE};
         
         font-family: var(--ff-primary);
         font-size: 1.6rem;
 
         -webkit-font-smoothing: antialiased;
+
+        border: 2px solid red;
     }
 
     main::-webkit-scrollbar{
@@ -31,7 +33,7 @@ export default createGlobalStyle`
         background-color: transparent;
     }
     main::-webkit-scrollbar-thumb{
-        background-color: ${({theme})=> theme.COLORS.TULIP};
+        background-color: ${({ theme }) => theme.COLORS.TULIP};
         border-radius: 1rem;
     }
 
@@ -40,17 +42,9 @@ export default createGlobalStyle`
         grid-template-rows: 11.6rem auto;
 
     }
-
-    aside{
-        margin: 6.7rem 1.5rem;
-        background-color: ${({theme}) => theme.COLORS.BACKGROUND_500};
-        height: max-content;
-
-    }
-
     textarea, input{
         font-family: var(--ff-secondary);
-        color: ${({theme}) => theme.COLORS.WHITE};
+        color: ${({ theme }) => theme.COLORS.WHITE};
     }
     
     a{
@@ -74,7 +68,6 @@ export default createGlobalStyle`
         main{
             padding: 2rem 1rem;
             grid-template-rows: 20rem auto;
-
         }
 
         #containerHeader{
@@ -88,6 +81,7 @@ export default createGlobalStyle`
                 justify-content: center;
             }
         }
+
 
         #containerTags{
             padding: .8rem .6rem;
