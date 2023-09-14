@@ -13,17 +13,17 @@ export function Header(){
 
     return(
         <Container id="containerHeader">
-            <GoHome to="/appmovies">
+            <GoHome to="/">
                 <h1>Appmoveis</h1>
             </GoHome>
             <Profile>
                 <div>
-                    <GoProfile to="/profile">
+                    <GoProfile to="profile">
                         <p>{user.name}</p>
                     </GoProfile>
                     <input type="button" value="sair" onClick={signOut}/>
                 </div>
-                <GoProfile to="/appmovies/profile">
+                <GoProfile to="profile">
                     <img src={avatarURL} alt={user.name} />
                 </GoProfile>
             </Profile>

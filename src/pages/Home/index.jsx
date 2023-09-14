@@ -63,7 +63,7 @@ export function Home(){
                         onChange={(e)=>{setSearch(e.target.value)}}
                     />
                     <Button
-                        to="/newmovie"
+                        to="newmovie"
                         icon={<FiPlus/>}
                         title="Adicionar filme" 
                     />
@@ -73,7 +73,7 @@ export function Home(){
                     movies.map((movie)=>(
                         <Preview 
                             key={String(movie.id)} 
-                            to={`/moviepreview/${movie.id}`}
+                            to={`moviepreview/${movie.id}`}
                             title={movie.title}
                             rating={movie.rating}
                             // description={movie.description}
