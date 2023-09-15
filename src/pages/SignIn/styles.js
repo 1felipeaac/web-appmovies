@@ -13,6 +13,8 @@ export const Container = styled.div`
 export const Form = styled.form`
   padding: 10.5rem 13.4rem;
 
+
+
   .formTitles {
 
     h1 {
@@ -37,7 +39,6 @@ export const Form = styled.form`
     button {
       margin-top: 2.4rem;
     }
-
     button:last-child {
       width: 100%;
       justify-content: center;

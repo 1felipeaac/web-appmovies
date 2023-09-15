@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useState } from "react";
 
 import {api} from '../services/api';
@@ -18,6 +20,7 @@ function AuthProvider ({children}){
 
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
             setData({user, token});
+            console.log({user, token});
 
         }catch(error){
             if(error.response){

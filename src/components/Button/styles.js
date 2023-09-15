@@ -5,7 +5,7 @@ export const Container = styled(Link)`
     background-color: ${({theme}) => theme.COLORS.TULIP};
     color: ${({theme}) => theme.COLORS.BACKGROUND_800};
 
-    max-width: 50rem;
+    /* max-width: 50rem; */
     width: 100%;
 
 

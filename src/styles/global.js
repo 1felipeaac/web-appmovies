@@ -69,9 +69,9 @@ export default createGlobalStyle`
         .formLog{
             padding: 2rem 1rem;
 
-            .containerInput, .containerButton{
+            /* .containerInput, .containerButton{
                 width: 30rem;
-            }
+            } */
 
         }
 
