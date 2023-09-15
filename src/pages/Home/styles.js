@@ -7,10 +7,6 @@ export const Container = styled.div`
     "header"
     "content"
     ;
-
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
     
     > main{
         grid-area: content;
@@ -19,19 +15,21 @@ export const Container = styled.div`
         #searchBox{
 
             #movieSearch{
+                padding-top: 5rem;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
 
 
                 h2{
                     max-width: 20rem;
+                    width: 100%;
                 }
 
                 #formSearch{
                     display: flex;
                     align-items: center;
-                    justify-content: space-around;
+                    gap: 1rem;
+                    width: 100%;
                 }
             }
     
@@ -55,7 +53,7 @@ export const Container = styled.div`
 
 export const InputSearch = styled.input`
     
-    max-width: 50rem;
+    /* max-width: 50rem; */
     width: 100%;
     /* flex-grow: 1; */
     background-color: ${({theme})=> theme.COLORS.BACKGROUND_600};

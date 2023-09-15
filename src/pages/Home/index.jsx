@@ -57,6 +57,7 @@ export function Home() {
             <h2>Meus filmes</h2>
             <div id="formSearch">
               <InputSearch
+                // style={{width: `clamp(10rem, 10rem + 10vw, 40rem)`}}
                 placeholder="Buscar pelo Título"
                 onChange={(e) => {
                   setSearch(e.target.value);
@@ -67,9 +68,9 @@ export function Home() {
           </div>
           <div id="tagBox">
             <ButtonText
-              title="Todos"
+              title="Generos"
               selected={tagsSelected.length === 0}
-              onClick={() => handleTagSelected("Todos")}
+              onClick={() => handleTagSelected("Generos")}
             />
             {tags &&
               tags.map((tag) => (

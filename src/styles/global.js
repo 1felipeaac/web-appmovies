@@ -24,6 +24,10 @@ export default createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
+    .containers{
+        padding: 5rem 20rem;
+    }
+
     main::-webkit-scrollbar{
         width: .5rem;
     }
@@ -33,13 +37,6 @@ export default createGlobalStyle`
     main::-webkit-scrollbar-thumb{
         background-color: ${({ theme }) => theme.COLORS.TULIP};
         border-radius: 1rem;
-    }
-
-    main{
-        padding: 4.7rem 9rem;
-        grid-template-rows: 11.6rem auto;
-
-        border: 2px solid red;
     }
 
     textarea, input{
@@ -61,10 +58,12 @@ export default createGlobalStyle`
 
     @media(max-width:728px) {
 
+        .containers{
+            padding: 1rem;
+        }
        
         main{
             padding: 2rem 1rem;
-            grid-template-rows: 20rem auto;
         }
 
         .formLog{
@@ -75,6 +74,16 @@ export default createGlobalStyle`
             }
 
         }
+
+        #movieSearch{
+            h2{
+                text-align: center;
+            }
+            flex-direction: column;
+            gap: 1rem;
+            padding-top: 2rem;
+        }
+
 
         #containerHeader{
             flex-wrap: wrap;

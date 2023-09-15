@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
 
     height: 100vh;
+
     display: grid;
+    justify-content: center;
+
     /* grid-template-rows: 11.6rem auto; */
     grid-template-areas: 
     "header"
@@ -12,7 +15,6 @@ export const Container = styled.div`
     > main {
         grid-area: content;
         overflow-y: auto;
-
     }
 `;
 
@@ -56,7 +58,7 @@ export const ContentTags = styled.div`
     align-items: center;
     gap: .8rem;
 
-    width: 100%;
+    /* width: 100%; */
 
     padding: 4rem 0;
 `;

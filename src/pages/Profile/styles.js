@@ -6,6 +6,8 @@ export const Container = styled.div`
     flex-direction: column;
 
     align-items: center;
+
+    margin-bottom: 2rem;
     
     > #link {
         position: absolute;
@@ -63,7 +65,6 @@ export const Container = styled.div`
 
 export const Form = styled.form`
     margin-top: 15rem;
-    width: 34rem;
 
 `;
 

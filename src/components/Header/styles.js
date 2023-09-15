@@ -13,10 +13,7 @@ export const Container = styled.header`
 
     border-bottom: 1px solid ${({theme}) => theme.COLORS.GRAY_300};
 
-    width: 100%;
     height: 11.6rem;
-
-    padding: 2.4rem 9rem;
 
     > h1 {
         color: ${({theme})=> theme.COLORS.TULIP};
@@ -29,8 +26,6 @@ export const Profile = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    width: 31.5rem;
 
     gap: .5rem;
 
