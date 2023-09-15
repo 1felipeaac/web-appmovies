@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import reactRefresh from '@vitejs/plugin-react-refresh';
@@ -7,7 +8,7 @@ export default defineConfig({
   base:"/",
   plugins: [
     react(),
-    reactRefresh()
+    reactRefresh(),
   ],
 
   build: {
